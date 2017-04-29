@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Controladores\" />
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -105,13 +107,25 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="FirstViewController.cs" />
-    <Compile Include="SecondViewController.cs" />
-    <Compile Include="FirstViewController.designer.cs">
-      <DependentUpon>FirstViewController.cs</DependentUpon>
+    <Compile Include="Controladores\Actividad.cs" />
+    <Compile Include="Controladores\Actividad.designer.cs">
+      <DependentUpon>Actividad.cs</DependentUpon>
     </Compile>
-    <Compile Include="SecondViewController.designer.cs">
-      <DependentUpon>SecondViewController.cs</DependentUpon>
+    <Compile Include="Controladores\Entrenadores.cs" />
+    <Compile Include="Controladores\Entrenadores.designer.cs">
+      <DependentUpon>Entrenadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controladores\Estadisticas.cs" />
+    <Compile Include="Controladores\Estadisticas.designer.cs">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controladores\Más.cs" />
+    <Compile Include="Controladores\Más.designer.cs">
+      <DependentUpon>Más.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
