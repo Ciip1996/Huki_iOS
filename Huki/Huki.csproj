@@ -82,6 +82,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.7.1\lib\Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -93,8 +99,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Controladores\" />
+    <Folder Include="Controlador\" />
     <Folder Include="Imagenes\" />
+    <Folder Include="Modelo\" />
+    <Folder Include="Controladores de Tabla\" />
+    <Folder Include="Resources\Controladores\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -103,30 +112,61 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Controladores\Actividad.cs" />
-    <Compile Include="Controladores\Actividad.designer.cs">
+    <Compile Include="Controlador\Actividad.cs" />
+    <Compile Include="Controlador\Actividad.designer.cs">
       <DependentUpon>Actividad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controladores\Entrenadores.cs" />
-    <Compile Include="Controladores\Entrenadores.designer.cs">
+    <Compile Include="Controlador\Entrenadores.cs" />
+    <Compile Include="Controlador\Entrenadores.designer.cs">
       <DependentUpon>Entrenadores.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controladores\Estadisticas.cs" />
-    <Compile Include="Controladores\Estadisticas.designer.cs">
+    <Compile Include="Controlador\Estadisticas.cs" />
+    <Compile Include="Controlador\Estadisticas.designer.cs">
       <DependentUpon>Estadisticas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controladores\Más.cs" />
-    <Compile Include="Controladores\Más.designer.cs">
-      <DependentUpon>Más.cs</DependentUpon>
+    <Compile Include="Controlador\Login.cs" />
+    <Compile Include="Controlador\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controlador\MiPerfil.cs" />
+    <Compile Include="Controlador\MiPerfil.designer.cs">
+      <DependentUpon>MiPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlador\MasViewController.cs" />
+    <Compile Include="Controlador\MasViewController.designer.cs">
+      <DependentUpon>MasViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Perfil.cs" />
+    <Compile Include="Modelo\Deportista.cs" />
+    <Compile Include="Modelo\Entrenador.cs" />
+    <Compile Include="Controladores de Tabla\OrigenTabla.cs" />
+    <Compile Include="Modelo\Logro.cs" />
+    <Compile Include="Controladores de Tabla\TablaLogros.cs" />
+    <Compile Include="Controladores de Tabla\TablaActividad.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Imagenes\estadist.png" />
+    <BundleResource Include="Imagenes\historial.png" />
+    <BundleResource Include="Imagenes\player.png" />
+    <BundleResource Include="Imagenes\trofeo.png" />
+    <BundleResource Include="Imagenes\user.png" />
+    <BundleResource Include="Imagenes\Entrenadores.png" />
+    <BundleResource Include="Imagenes\Ivan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="sqlite-net">
+      <Version>1.0.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

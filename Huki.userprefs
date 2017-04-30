@@ -1,5 +1,11 @@
 ﻿<Properties StartupConfiguration="{60A03509-2954-4D4F-BFF5-3AC3839D6117}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Huki/Controlador/Actividad.cs">
+    <Files>
+      <File FileName="Huki/Controlador/MasViewController.cs" Line="23" Column="65" />
+      <File FileName="Huki/Controlador/MiPerfil.cs" Line="15" Column="23" />
+      <File FileName="Huki/Controlador/Actividad.cs" Line="22" Column="8" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
